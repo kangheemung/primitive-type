@@ -1,28 +1,11 @@
-interface Product {
-    img: string;
-    name: string;
-    description: string;
-}
+interface,type
 
-interface SalesProduct extends Product {
-    discountPercent: number;
+interface Student{
+    name:string;
+    age?:number;
+    isStudent:boolean;
 }
-
-type ApiResponse = {
-    products: Product[];
-    salesProducts: SalesProduct[];
-}
-
-const apiResponse: ApiResponse = {
-    products: [
-        { img: "pants.png", name: "ズボン", description: "newpants" },
-        { img: "jacket.png", name: "ジャケット", description: "jacket" }
-    ],
-    salesProducts: [
-        { img: "skirts.png", name: "スカート", description: "skirts", discountPercent: 20 },
-        { img: "shirts.png", name: "シャーヅ", description: "shirts", discountPercent: 10 }
-    ]
-}
-
-// Error Explanation
-// The map function is not available on ApiResponse directly because it contains multiple types. 
+let b:Student={name:"noona",age:34}
+let c:{name:string,age:number}={name:"noona",age:23}
+let d:{name:string|number|boolean,age?:number,isStudent:boolean}={name:"asd",age:12}
+let e:{name:string|number|boolean,age?:number,isStudent:boolean}={name:"sdf",age:12}
