@@ -1,6 +1,7 @@
 interface IPerson{
     name:string;
     age:number;
+    gender:string;
 }
 interface Iforeigner extends IPerson{
     // name:string;
@@ -8,5 +9,6 @@ interface Iforeigner extends IPerson{
     // gender:string;
     nationality:string;
 }
-type IForeigner = Iperson |{nationallty:string,period:Date}
-    interface INewForeigner
+type IForeigner = IPerson | {nationality:string,period:Date}
+let american :IForeigner={nationality:"american"}
+interface INewForeigner
