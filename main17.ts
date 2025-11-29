@@ -10,5 +10,7 @@ interface Iforeigner extends IPerson{
     nationality:string;
 }
 type IForeigner = IPerson | {nationality:string,period:Date}
-let american :IForeigner={nationality:"american"}
-interface INewForeigner
+// let american :IForeigner={nationality:"american",name: "jacob",age:23,gender: "F"}
+let american :IForeigner={nationality:"american",period:new Date("")}
+
+// interface INewForeigner
