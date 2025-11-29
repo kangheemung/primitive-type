@@ -5,7 +5,7 @@ function infinte(): never{
 
         }
 }
-function throwError(): naver {
+function throwError(): naver{
     throw new Error("エラー");
 }
 
