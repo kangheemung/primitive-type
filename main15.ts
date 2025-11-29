@@ -16,8 +16,3 @@ let c1: AorB = {
 let c2: AorB = {
     b: 3,
 };
-
-let c: AorB = {
-    a: 2,
-    b: 3, // Assigning a value to 'b' property matching the defined type
-};
